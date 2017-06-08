@@ -463,16 +463,16 @@ ARM Macro Assembler    Page 8
   305 0000001C                 END
               00000000 
               00000000 
-Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
-ork --depend=.\objects\startup_stm32f10x_md.d -o.\objects\startup_stm32f10x_md.
-o -ID:\±œ…Ë\–ª”¢Ω‹\ProjectTemplate\RTE -ID:\±œ…Ë\–ª”¢Ω‹\ProjectTemplate\RTE\Dev
-ice\STM32F103C8 -IB:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMSIS\Include -IB:\Keil_v
-5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include -IB:\Keil_v5\ARM\PACK\Keil\S
-TM32F1xx_DFP\2.0.0\Device\StdPeriph_Driver\inc -IB:\Keil_v5\ARM\PACK\Keil\STM32
-F1xx_DFP\2.0.0\RTE_Driver --predefine="__MICROLIB SETA 1" --predefine="__UVISIO
-N_VERSION SETA 517" --predefine="_RTE_ SETA 1" --predefine="STM32F10X_MD SETA 1
-" --list=.\listings\startup_stm32f10x_md.lst RTE\Device\STM32F103C8\startup_stm
-32f10x_md.s
+Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=.\object
+s\startup_stm32f10x_md.d -o.\objects\startup_stm32f10x_md.o -I"D:\Workspaces\Ke
+il uVision5\LAMP_STM32\ProjectTemplate\RTE" -I"D:\Workspaces\Keil uVision5\LAMP
+_STM32\ProjectTemplate\RTE\Device\STM32F103C8" -ID:\Keil_v5\ARM\PACK\ARM\CMSIS\
+4.2.0\CMSIS\Include -ID:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Inclu
+de -ID:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\StdPeriph_Driver\inc -
+ID:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\RTE_Driver --predefine="__EVAL SE
+TA 1" --predefine="__MICROLIB SETA 1" --predefine="_RTE_ SETA 1" --predefine="S
+TM32F10X_MD SETA 1" --list=.\listings\startup_stm32f10x_md.lst RTE\Device\STM32
+F103C8\startup_stm32f10x_md.s
 
 
 

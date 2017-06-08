@@ -115,17 +115,22 @@ void wifiRec()
 	}
 }
 
+
+float votage = 0;
+static double oldTime = 0, curTime = 0;
+
+
 void CheckADCStatus(void)
 {
-	static double oldTime = 0, curTime = 0;
 	curTime = tskmgr.Time();
-	if(MQ_AO[5] > 2.0)
+	votage = MQ_AO[5];
+	if(votage > 2.0)
 	{
-		if((curTime - oldTime > 3) && Work) {
+		if(Work) 
 			Set_LED(true);
-		}
+
 	} else {
-		oldTime = curTime;
+
 		Set_LED(false);
 	}
 }
@@ -143,7 +148,7 @@ int main()
 	uint16_t loop500Hzcnt=0,loop200HzCnt=0,loop50HzCnt=0 , loop600HzCnt=0,loop100HzCnt=0, loop20HzCnt=0 , loop10HzCnt=0, loop1HzCnt=0;
 	while (tskmgr.Time() < 1);
 
-	double curTime = 0, oldTime = 0;
+//	double curTime = 0, oldTime = 0;
 	int cnt = 0;
 	
 	WIFI_Init();
